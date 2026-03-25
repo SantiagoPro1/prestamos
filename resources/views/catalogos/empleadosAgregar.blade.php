@@ -2,7 +2,9 @@
 
 @section("content")
     <div class="row my-4">
-        <div class="col"><h1>Alta de Nuevo Empleado</h1></div>
+        <div class="col">
+            <h1>Alta de Nuevo Empleado</h1>
+        </div>
     </div>
 
     <div class="card shadow-sm" style="max-width: 600px;">

@@ -9,13 +9,11 @@
 
     <div class="card mb-4">
         <div class="card-body bg-light">
-            {{-- Cambiado: apellido (sin S) --}}
-            <p class="mb-1"><strong>EMPLEADO:</strong> {{ $prestamo->empleado->nombre }} {{ $prestamo->empleado->apellido }}</p>
-            
-            {{-- Cambiado: fecha_aprob --}}
+            <p class="mb-1"><strong>EMPLEADO:</strong> {{ $prestamo->empleado->nombre }} {{ $prestamo->empleado->apellido }}
+            </p>
+
             <p class="mb-1"><strong>FECHA APROBACIÓN:</strong> {{ $prestamo->fecha_aprob }}</p>
-            
-            {{-- Cambiado: monto --}}
+
             <p class="mb-0"><strong>MONTO PRESTADO:</strong> ${{ number_format($prestamo->monto, 2) }}</p>
         </div>
     </div>
@@ -38,8 +36,7 @@
         </thead>
         <tbody class="text-center">
             @php
-                // Usamos 'monto' que es el nombre real en tu SQL
-                $saldo = $prestamo->monto; 
+                $saldo = $prestamo->monto;
                 $total_capital = 0;
                 $total_interes = 0;
                 $total_cobrado = 0;
@@ -63,7 +60,7 @@
                     <td>${{ number_format($saldo, 2) }}</td>
                 </tr>
             @endforeach
-            
+
             <tr class="table-secondary fw-bold">
                 <td colspan="2" class="text-end">TOTALES:</td>
                 <td>${{ number_format($total_capital, 2) }}</td>

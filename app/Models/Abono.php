@@ -9,7 +9,6 @@ class Abono extends Model
 {
     use HasFactory;
 
-    // Los campos exactos que tienes en tu tabla de la base de datos
     protected $fillable = [
         'prestamo_id',
         'fecha_abono',

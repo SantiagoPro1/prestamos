@@ -18,8 +18,7 @@
 
                 <div class="mb-4">
                     <label class="form-label fw-bold">Fecha del Abono:</label>
-                    <input type="date" name="fecha_abono" class="form-control" 
-                           value="{{ date('Y-m-d') }}" required>
+                    <input type="date" name="fecha_abono" class="form-control" value="{{ date('Y-m-d') }}" required>
                 </div>
 
                 <div class="row">
@@ -27,8 +26,8 @@
                         <label class="form-label fw-bold text-success">Abono a Capital ($):</label>
                         <div class="input-group">
                             <span class="input-group-text">$</span>
-                            <input type="number" step="0.01" name="abono_capital" 
-                                   class="form-control border-success" placeholder="0.00" required>
+                            <input type="number" step="0.01" name="abono_capital" class="form-control border-success"
+                                placeholder="0.00" required>
                         </div>
                         <small class="text-muted">Monto que reduce la deuda.</small>
                     </div>
@@ -37,8 +36,8 @@
                         <label class="form-label fw-bold text-primary">Interés ($):</label>
                         <div class="input-group">
                             <span class="input-group-text">$</span>
-                            <input type="number" step="0.01" name="interes" 
-                                   class="form-control border-primary" placeholder="0.00" required>
+                            <input type="number" step="0.01" name="interes" class="form-control border-primary"
+                                placeholder="0.00" required>
                         </div>
                         <small class="text-muted">Ganancia por el préstamo.</small>
                     </div>

@@ -2,7 +2,9 @@
 
 @section("content")
     <div class="row my-4">
-        <div class="col"><h1>Modificar Puesto: {{ $puesto->nombre }}</h1></div>
+        <div class="col">
+            <h1>Modificar Puesto: {{ $puesto->nombre }}</h1>
+        </div>
     </div>
     <div class="card shadow-sm" style="max-width: 500px;">
         <div class="card-body">
@@ -14,7 +16,8 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label fw-bold">Sueldo Base ($):</label>
-                    <input type="number" step="0.01" name="sueldo" class="form-control" value="{{ $puesto->sueldo }}" required>
+                    <input type="number" step="0.01" name="sueldo" class="form-control" value="{{ $puesto->sueldo }}"
+                        required>
                 </div>
                 <button type="submit" class="btn btn-warning w-100">Actualizar Puesto</button>
             </form>

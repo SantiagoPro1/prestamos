@@ -1,4 +1,4 @@
-@extends("components.layout")
+a@extends("components.layout")
 
 @section("content")
     <div class="row my-4">
@@ -23,13 +23,12 @@
             @foreach($puestos as $puesto)
                 <tr>
                     <td>{{ $puesto->id }}</td>
-                    <td>{{ $puesto->nombre }}</td> 
-                    <td>${{ number_format($puesto->sueldo, 2) }}</td> 
+                    <td>{{ $puesto->nombre }}</td>
+                    <td>${{ number_format($puesto->sueldo, 2) }}</td>
                     <td class="text-center">
                         <a href="/catalogos/puestos/{{ $puesto->id }}/modificar" class="btn btn-warning btn-sm">Modificar</a>
-                        <a href="/catalogos/puestos/{{ $puesto->id }}/eliminar" 
-                           class="btn btn-danger btn-sm" 
-                           onclick="return confirm('¿Eliminar el puesto {{ $puesto->nombre }}?')">Eliminar</a>
+                        <a href="/catalogos/puestos/{{ $puesto->id }}/eliminar" class="btn btn-danger btn-sm"
+                            onclick="return confirm('¿Eliminar el puesto {{ $puesto->nombre }}?')">Eliminar</a>
                     </td>
                 </tr>
             @endforeach

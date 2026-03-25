@@ -37,8 +37,7 @@
                     <label class="form-label fw-bold">Puesto Actual:</label>
                     <select name="puesto_id" class="form-select" required>
                         @foreach($puestos as $p)
-                            <option value="{{ $p->id }}" 
-                                {{ $empleado->puestos->contains($p->id) ? 'selected' : '' }}>
+                            <option value="{{ $p->id }}" {{ $empleado->puestos->contains($p->id) ? 'selected' : '' }}>
                                 {{ $p->nombre }} - (${{ number_format($p->sueldo_mensual, 2) }})
                             </option>
                         @endforeach

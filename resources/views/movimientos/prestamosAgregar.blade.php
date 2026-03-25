@@ -2,7 +2,9 @@
 
 @section("content")
     <div class="row my-4">
-        <div class="col"><h1>Alta de Nuevo Préstamo</h1></div>
+        <div class="col">
+            <h1>Alta de Nuevo Préstamo</h1>
+        </div>
     </div>
 
     <div class="card shadow-sm" style="max-width: 600px;">
@@ -18,7 +20,7 @@
                         @endforeach
                     </select>
                 </div>
-                
+
                 <div class="mb-3">
                     <label class="form-label fw-bold">Monto:</label>
                     <div class="input-group">
@@ -37,7 +39,7 @@
                         <input type="date" name="fecha_fin_des" class="form-control" required>
                     </div>
                 </div>
-                
+
                 <div class="form-check form-switch mb-3">
                     <input class="form-check-input" type="checkbox" id="estatusSwitch" name="estatus" checked value="1">
                     <label class="form-check-label fw-bold" for="estatusSwitch">Préstamo Activo</label>
