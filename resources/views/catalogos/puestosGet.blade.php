@@ -1,4 +1,4 @@
-a@extends("components.layout")
+@extends("components.layout")
 
 @section("content")
     <div class="row my-4">
